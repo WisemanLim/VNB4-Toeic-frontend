@@ -1,0 +1,10 @@
+packages:
+  - web
+  - desktop
+  - shared
+
+# pnpm 11+: settings live here (formerly package.json pnpm.*). See https://pnpm.io/settings
+#
+# 알려진 native deps (sharp, esbuild, @swc/core, @tauri-apps/cli, unrs-resolver, ...)
+# install/postinstall 모두 허용. Next.js + Tauri 생태계 표준.
+dangerouslyAllowAllBuilds: true

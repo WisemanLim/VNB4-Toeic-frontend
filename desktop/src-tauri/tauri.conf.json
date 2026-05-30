@@ -1,0 +1,32 @@
+{
+  "$schema": "https://schema.tauri.app/config/2",
+  "productName": "VNB4 TOEIC Admin",
+  "version": "0.1.0",
+  "identifier": "io.vnb4.toeic.admin",
+  "build": {
+    "frontendDist": "../../web/out",
+    "devUrl": "http://localhost:3000",
+    "beforeDevCommand": "pnpm --filter @vnb4-toeic/web dev",
+    "beforeBuildCommand": "NEXT_OUTPUT_EXPORT=true pnpm --filter @vnb4-toeic/web build"
+  },
+  "app": {
+    "windows": [
+      {
+        "title": "VNB4 TOEIC Admin",
+        "width": 1280,
+        "height": 800,
+        "minWidth": 1024,
+        "minHeight": 700,
+        "resizable": true
+      }
+    ],
+    "security": {
+      "csp": "default-src 'self' ipc: http://ipc.localhost; img-src 'self' data: https:; connect-src 'self' http://localhost:4000 https://*"
+    }
+  },
+  "bundle": {
+    "active": true,
+    "targets": ["dmg", "app", "msi", "nsis", "deb", "appimage"],
+    "icon": ["icons/icon.png"]
+  }
+}

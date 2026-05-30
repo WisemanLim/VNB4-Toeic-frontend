@@ -1,0 +1,68 @@
+# =============================================================================
+# VNB4-Toeic-frontend — Next.js 14 + Tauri 2 + shadcn (.gitignore)
+# =============================================================================
+
+# Node / pnpm
+node_modules/
+.pnpm-store/
+
+# Next.js
+.next/
+out/
+next-env.d.ts
+.swc/
+
+# Tauri
+src-tauri/target/
+src-tauri/gen/
+src-tauri/WixTools/
+*.app
+*.dmg
+*.exe
+*.msi
+
+# Build output
+dist/
+build/
+.turbo/
+.cache/
+
+# Env
+.env
+.env.local
+.env.development.local
+.env.production.local
+.env.test.local
+!.env.example
+
+# Logs
+*.log
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+
+# TypeScript
+*.tsbuildinfo
+
+# Coverage / test
+coverage/
+.nyc_output/
+
+# Vercel
+.vercel
+
+# OS / Editor
+.DS_Store
+Thumbs.db
+.idea/
+.vscode/*
+!.vscode/settings.json
+!.vscode/extensions.json
+.gstack/
+
+# AI/agent tooling temp (oh-my-claudecode, gstack, code-review)
+.omc/
+.gstack/
+.review/
+.claude/
+*.tmp

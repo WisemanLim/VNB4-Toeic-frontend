@@ -1,0 +1,15 @@
+{
+  "name": "@vnb4-toeic/desktop",
+  "version": "0.1.0",
+  "private": true,
+  "license": "MIT",
+  "description": "Tauri desktop wrapper for the admin web build",
+  "scripts": {
+    "tauri": "tauri",
+    "dev": "tauri dev",
+    "build": "tauri build"
+  },
+  "devDependencies": {
+    "@tauri-apps/cli": "^2.0.4"
+  }
+}

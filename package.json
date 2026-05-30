@@ -1,0 +1,16 @@
+{
+  "name": "@vnb4-toeic/frontend",
+  "version": "0.1.0",
+  "private": true,
+  "license": "MIT",
+  "workspaces": ["web", "desktop", "shared"],
+  "scripts": {
+    "web:dev": "pnpm --filter @vnb4-toeic/web dev",
+    "web:build": "pnpm --filter @vnb4-toeic/web build",
+    "desktop:dev": "pnpm --filter @vnb4-toeic/desktop tauri dev",
+    "desktop:build": "pnpm --filter @vnb4-toeic/desktop tauri build"
+  },
+  "engines": {
+    "pnpm": ">=10"
+  }
+}
