@@ -14,8 +14,8 @@ Next.js 14 admin web + Tauri 2 desktop shell.
 ## Why source-copy, not full shadcn CLI fork
 
 shadcn/ui is not a library but a "code ownership" pattern. Component code lives directly in this repo.
-Legally this means including MIT code in this repo → stated in LICENSES.md. No separate fork trigger.
-To add a component, call `pnpm dlx shadcn@latest add <component>` and it accumulates under components/ui/.
+Legally this means including MIT code in this repo → stated in each package's `package.json` `"license": "MIT"`. No separate fork trigger.
+Components live directly under `web/components/` (using `pnpm dlx shadcn@latest add <component>` accumulates them under `components/ui/`).
 
 ## Structure
 

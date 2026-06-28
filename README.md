@@ -14,8 +14,8 @@ Next.js 14 admin web + Tauri 2 desktop shell.
 ## Why source-copy, not full shadcn CLI fork
 
 shadcn/ui는 라이브러리가 아니라 "코드 소유" 패턴. 컴포넌트 코드를 본 리포에 직접 둠.
-법적으로는 MIT 코드를 본 리포에 포함하는 것 → LICENSES.md에 명시. 별도 fork 트리거 없음.
-컴포넌트 추가는 `pnpm dlx shadcn@latest add <component>` 호출 후 components/ui/ 에 누적.
+법적으로는 MIT 코드를 본 리포에 포함하는 것 → 각 패키지 `package.json` 의 `"license": "MIT"` 에 명시. 별도 fork 트리거 없음.
+컴포넌트는 `web/components/` 에 직접 둠 (`pnpm dlx shadcn@latest add <component>` 사용 시 `components/ui/` 에 누적).
 
 ## Structure
 
